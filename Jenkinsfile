@@ -3,14 +3,17 @@ pipeline {
 
     stages {
 stage('Checkout') {
+ 
     steps {
-        git(
-            url: 'https://github.com/Harsha6404/tomcat_pro1.git',
-            branch: 'main',
-            credentialsId: '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'
-        )
-    }
-}
+           
+                git branch: 'main', url: 'https://github.com/Harsha6404/hotstarby.git'
+
+               
+                sh 'pwd'
+                sh 'ls -l'
+                sh 'ls -R'
+            }
+        }
 
 
         stage('Build WAR') {
