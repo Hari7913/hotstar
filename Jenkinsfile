@@ -2,17 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout code from main branch
-                git branch: 'main', url: 'https://github.com/Harsha6404/hotstarby.git'
+stage('Checkout') {
+    steps {
+        git(
+            url: 'https://github.com/Harsha6404/tomcat_pro1.git',
+            branch: 'main',
+            credentialsId: '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'
+        )
+    }
+}
 
-                // Verify files
-                sh 'pwd'
-                sh 'ls -l'
-                sh 'ls -R'
-            }
-        }
 
         stage('Build WAR') {
             steps {
