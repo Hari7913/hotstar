@@ -12,7 +12,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/Hari7913/hotstar-clone-app.git'
+                url: 'https://github.com/Hari7913/hotstar.git'
             }
         }
 
