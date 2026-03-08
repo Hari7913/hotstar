@@ -57,7 +57,8 @@
         <url>http://13.201.193.26:8080/repository/maven-releases/</url>
     </repository>
 
-    <snapshotRepository>
+  
+	<snapshotRepository>
         <id>nexus</id>
         <name>Nexus Snapshots</name>
         <url>http://13.201.193.26:8080/repository/maven-snapshots/</url>
