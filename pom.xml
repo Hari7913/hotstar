@@ -52,13 +52,13 @@
 	</pluginRepositories>
 <distributionManagement>
     <repository>
-        <id>nexus</id>
+        <id>maven-releases</id>
         <name>Nexus Releases</name>
         <url>http://13.201.193.26:8080/repository/maven-releases/</url>
     </repository>
   
 	<snapshotRepository>
-        <id>nexus</id>
+        <id>maven-snapshots</id>
         <name>Nexus Snapshots</name>
         <url>http://13.201.193.26:8080/repository/maven-snapshots/</url>
     </snapshotRepository>
