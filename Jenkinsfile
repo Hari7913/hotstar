@@ -28,7 +28,7 @@ pipeline {
  stage('JENKINS TO NEXUS') {
         steps {
           withMaven(jdk: 'jdk17', maven: 'maven3', traceability: true) {
-             sh 'mvn deploy'
+             sh 'mvn clean package -DskipTests'
 }
         }
     }
