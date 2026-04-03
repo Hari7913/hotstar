@@ -71,8 +71,8 @@ pipeline {
         rm -rf ~/.kube/config
         aws eks --region ap-south-1 update-kubeconfig --name satyacluster
         kubectl get nodes
-        kubectl apply -f k8s/Deployment.yml
-        kubectl apply -f k8s/Service.yml
+        kubectl apply -f Deployment.yml
+        kubectl apply -f Service.yml
         '''
     }
 }
